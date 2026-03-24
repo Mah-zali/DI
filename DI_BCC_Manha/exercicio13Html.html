@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 13 - HTML - Formularios</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="paginaDestino.php" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="">Nome:</label>
+                <input type="text" name="txtNome" id="txtNome">
+            </div>
+            <br>
+            <div>
+                <label for="">Endereço:</label>
+                <input type="text" name="txtEndereco" id="txtEndereco">
+            </div>
+            <br>
+            <div>
+                <label for="">Cidade:</label>
+                <input type="text" name="txtCidade" id="txtCidade">
+            </div>
+            <br>
+            <div>
+                <label for="">Estado:</label>
+                <select name="cboEstado" id="cboEstado">
+                    <option value="1">São Paulo</option>
+                    <option value="2">Acre</option>
+                    <option value="3">DF</option>
+                    <option value="4">Maranhão</option>
+                    <option value="5">Rio de Janeiro</option>
+                    <option value="6">Paraná</option>
+                </select>
+            </div>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <div>
+                <label for="">Natureza do Cargo</label><br>
+                <input type="radio" name="rdCargo" id="rdCargo" value="0">Gerência
+                <input type="radio" name="rdCargo" id="rdCargo" value="1">Financeiro
+                <input type="radio" name="rdCargo" id="rdCargo" value="2">Recepção
+                <input type="radio" name="rdCargo" id="rdCargo" value="3">Administrativo
+                <input type="radio" name="rdCargo" id="rdCargo" value="3">Jurídico
+            </div>
+            <br>
+            <div>
+                <label for="">Área de Interesse</label> <br>
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="1"> Computação
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="2"> Biologia
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="3"> Meio Ambiente
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="4"> Engenharia
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="5"> História
+            </div>
+            <br>
+            <label for="">Mini Currículo</label>
+            <textarea name="" id=""></textarea>
+        </fieldset>
+
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="submit">Limpar</button>
+        </div>
+    </form>
+</body>
+
+</html>
