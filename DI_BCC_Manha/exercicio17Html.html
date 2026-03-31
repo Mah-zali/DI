@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 17 - HTML</title>
+</head>
+<body>
+    <h1>Exercicio 17 HTML - Cadastro Pessoal</h1>
+    <form action="paginaDestino.php" method="post">
+        <fieldset>
+            <legend>Cadastro Pessoal</legend>
+            <div>
+                <label for="">Nome Completo</label>
+                <input type="text" name="txtNome" id="txtNome" required>
+            </div>
+            <br>
+            <div>
+                <label for="">E-mail</label>
+                <input type="email" name="txtEmail" id="txtEmail" placeholder="josebezerra@gmail.com" required>
+            </div>
+            <br>
+            <div>
+                <label for="">Ano de Nascimento</label>
+                <input type="number" name="txtAnoNascimento" id="txtAnoNascimento" max="2026" min="1940">
+            </div>
+            <br>
+            <div>
+                <label for="">Data de Nascimento</label>
+                <input type="date" name="txtData" id="txtData">
+            </div>
+            <br>
+            <div>
+                <label for="">Horário preferido de estudo</label>
+                <input type="time" name="txtHorarioEstudo" id="txtHorarioEstudo">
+            </div>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

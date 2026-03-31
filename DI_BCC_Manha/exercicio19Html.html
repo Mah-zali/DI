@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 19 - HTML</title>
+</head>
+<body>
+    <h1>Exercicio 19 - Cadastro</h1>
+    <form action="paginadestino.php" method="post">
+        <fieldset>
+            <legend>Cadastro Completo</legend>
+            <div>
+                <label for="">Nome Completo</label>
+                <input type="text" name="txtNome" id="txtNome" required>
+            </div>
+            <br>
+            <div>
+                <label for="">Selecione sua cor para o crachá</label>
+                <input type="color" name="txtCor" id="txtCor">
+            </div>
+            <br>
+            <div>
+                <label for="">Selecione uma ou mais disciplinas de interesse</label> <br>
+                <input type="checkbox" name="chkDisciplinas" id="chkDisciplinas" value = "1">Física <br>
+                <input type="checkbox" name="chkDisciplinas" id="chkDisciplinas" value = "2">Quimica <br>
+                <input type="checkbox" name="chkDisciplinas" id="chkDisciplinas" value = "3">Matemática <br>
+                <input type="checkbox" name="chkDisciplinas" id="chkDisciplinas" value = "4">História <br>
+                <input type="checkbox" name="chkDisciplinas" id="chkDisciplinas" value = "5">Religião <br>
+                <input type="checkbox" name="chkDisciplinas" id="chkDisciplinas" value = "6">Sociologia <br>
+            </div>
+            <br>
+            <div>
+                <label for="">Selecione um Turno de preferência</label> <br>
+                <input type="radio" name="rdTurno" id="rdTurno" value = "1">Vespertino <br>
+                <input type="radio" name="rdTurno" id="rdTurno" value = "2">Matutino <br>
+                <input type="radio" name="rdTurno" id="rdTurno" value = "3">Noturno <br>
+            </div>
+            <br>
+            <div>
+                <label for="">Selecione um Curso</label>
+                <select name="cbocurso" id="cbocurso">
+                    <option value="1">Ciência da Computação</option>
+                    <option value="2">ADS</option>
+                    <option value="3">Psicologia</option>
+                    <option value="4">Nutrição</option>
+                    <option value="5">Farmácia</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="">Nível de Interesse</label>
+                <input type="range" name="txtNiveldeInteresse" id="txtNiveldeInteresse" required min = "0" max = "10" step = "1">
+            </div>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
